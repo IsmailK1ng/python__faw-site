@@ -1,0 +1,1210 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Заголовок страницы -->
+  <title>Faw Trucks в Узбекистане</title>
+
+  <!-- Мета теги -->
+  <meta name="description" content="Faw Trucks в Узбекистане">
+  <meta name="keywords" content="Faw Trucks в Узбекистане">
+  <meta name="author" content="mix_design">
+
+  <!-- Мета viewport -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Фавикон и иконки (начало) -->
+<link rel="shortcut icon" href="{% static 'img/icon/favicon_5.ico' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'img/favicon/icon.svg' %}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+<link rel="manifest" href="{% static 'img/favicon/manifest.webmanifest' %}">
+  <!-- Фавикон и иконки (конец) -->
+
+  <!-- Мета для Facebook (начало) -->
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:title" content="Faw Trucks в Узбекистане">
+  <meta property="og:description" content="Faw Trucks в Узбекистане">
+  <meta property="og:url" content="https://mixdesign.dev/themeforest/rayo">
+  <meta property="og:image" content="https://mixdesign.dev/themeforest/rayo/img/og-image.jpg">
+  <!-- Мета для Facebook (конец) -->
+
+  <!-- Подключение стилей (начало) -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/loaders/loader.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/plugins.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/main_site.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/site_main.css' %}">
+  <!-- Стили Leaflet для карты в футере -->
+
+
+  <!-- Цвет браузера (начало) -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161616">
+  <meta name="msapplication-navbutton-color" content="#161616">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Цвет браузера (конец) -->
+
+</head>
+
+<body>
+
+  <!-- Меню и шапка (начало) -->
+  <nav id="header" class="mxd-nav__wrap" data-lenis-prevent="">
+
+    <!-- Логотип в шапке (начало) -->
+    <div class="mxd-header__logo loading__fade">
+      <a href="site_main.html" class="mxd-logo">
+        <img src="faw_site-img/LOGO-VUM.png" class="mxd-logo__image" alt="FAW Logo">
+        <!-- <span class="mxd-logo__text">Faw</span> -->
+      </a>
+    </div>
+    <!-- Логотип в шапке (конец) -->
+
+    <!-- Навигация для десктопа (начало) -->
+    <div class="mxd-header__nav loading__fade">
+      <ul class="desktop-menu">
+        <li class="desktop-menu__item active">
+          <a href="site_main.html" class="desktop-menu__link">Bosh sahifa</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="#" class="desktop-menu__link">
+            Dilerlar
+            <span class="desktop-menu__arrow">▼</span>
+          </a>
+          <ul class="desktop-submenu">
+            <li class="desktop-submenu__item">
+              <a href="site_dealers.html" class="desktop-submenu__link">Diler topish</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="become_potential_dealer.html" class="desktop-submenu__link">Diler bo'lish</a>
+            </li>
+          </ul>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="site_news.html" class="desktop-menu__link">Kompaniya yangiliklari</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="faw_main-models.html" class="desktop-menu__link">
+            Modellar
+            <span class="desktop-menu__arrow">▼</span>
+          </a>
+          <ul class="desktop-submenu">
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Shatakchi mashinalar</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Samosvallar</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Maxsus texnika</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Avtofurgonlar</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Shassilar</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Tiger V</a>
+            </li>
+            <li class="desktop-submenu__item">
+              <a href="faw_main-models.html" class="desktop-submenu__link">Tiger VR</a>
+            </li>
+          </ul>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="site_about.html" class="desktop-menu__link">Kompaniya haqida</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="site_lizing.html" class="desktop-menu__link">Lizing</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="site_service.html" class="desktop-menu__link">Servis</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="site_contact.html" class="desktop-menu__link">Bo'glanish</a>
+        </li>
+        <li class="desktop-menu__item">
+          <a href="jobs-page.html" class="desktop-menu__link">Vakansiya</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Навигация для десктопа (конец) -->
+
+    <!-- Элементы управления шапкой (начало) -->
+    <div class="mxd-header__controls loading__fade">
+      <div class="language-switcher">
+        <span class="language-current">UZ</span>
+        <span class="language-arrow">▼</span>
+        <div class="language-dropdown">
+          <a href="#" class="language-option" data-lang="uz">O'zbek</a>
+          <a href="#" class="language-option" data-lang="ru">Русский</a>
+          <a href="#" class="language-option" data-lang="en">English</a>
+        </div>
+      </div>
+      <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode"
+        aria-checked="true"></button>
+      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up" style="gap: 0;"
+        href="#faw-main-contact-form" aria-label="Перейти к форме связи">
+        <span class="btn-caption"></span>
+        <i class="ph-bold ph-arrow-up-right"></i>
+      </a>
+    </div>
+    <!-- Элементы управления шапкой (конец) -->
+
+    <!-- Гамбургер (начало) -->
+    <div class="mxd-nav__contain loading__fade">
+      <a href="#0" class="mxd-nav__hamburger">
+        <!-- flip element -->
+        <div class="hamburger__base"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </a>
+    </div>
+    <!-- Гамбургер (конец) -->
+
+    <!-- Основная мобильная навигация (начало) -->
+    <div class="mxd-menu__wrapper">
+      <!-- background active layer -->
+      <div class="mxd-menu__base"></div>
+      <!-- menu container -->
+      <div class="mxd-menu__contain">
+        <div class="mxd-menu__inner">
+          <!-- left side -->
+          <div class="mxd-menu__left">
+            <p class="mxd-menu__caption menu-fade-in">🚚 FAW Trucks Uzbekistan<br>Ishonchli transport yechimlari</p>
+            <div class="main-menu">
+              <nav class="main-menu__content">
+                <ul id="main-menu" class="main-menu__accordion">
+                  <li class="main-menu__item">
+                    <a class="main-menu__link btn btn-anim" href="site_main.html">
+                      <span class="btn-caption">Bosh sahifa</span>
+                    </a>
+                  </li>
+                  <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <span class="main-menu__link btn btn-anim">
+                        <span class="btn-caption">Dilerlar</span>
+                      </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                        <path
+                          d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
+                      </svg>
+                    </div>
+                    <ul class="submenu">
+                      <li class="submenu__item">
+                        <a href="site_dealers.html">Diler topish</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="become_potential_dealer.html">Diler bo'lish</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link btn btn-anim" href="site_news.html">
+                      <span class="btn-caption">Kompaniya yangiliklari</span>
+                    </a>
+                  </li>
+                  <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <span class="main-menu__link btn btn-anim">
+                        <span class="btn-caption">Modellar</span>
+                      </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                        <path
+                          d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
+                      </svg>
+                    </div>
+                    <ul class="submenu">
+                      <li class="submenu__item">
+                        <a href="faw_main-models.html">Yuk mashinalari</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="faw_main-models.html">Avtobuslar</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="faw_main-models.html">Maxsus texnika</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link btn btn-anim" href="site_about.html">
+                      <span class="btn-caption">Kompaniya haqida</span>
+                    </a>
+                  </li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link btn btn-anim" href="site_contact.html">
+                      <span class="btn-caption">Bog'lanish</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- нижняя информационная строка -->
+          <div class="mxd-menu__data menu-fade-in">
+            <p class="t-xsmall">
+              FAW Trucks Uzbekistan
+              <i class="ph-fill ph-heart t-additional"></i>
+            </p>
+            <p class="t-xsmall">
+              <i class="ph ph-copyright"></i>
+              2025
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Основная мобильная навигация (конец) -->
+
+  </nav>
+  <!-- Меню и шапка (конец) -->
+
+  <!-- Контент страницы (начало) -->
+  <main id="mxd-page-content" class="mxd-page-content">
+
+    <!-- Секция героя (начало) -->
+    <div class="mxd-section">
+      <div class="mxd-hero-06">
+        <div class="mxd-hero-06__wrap loading-wrap">
+          <div class="mxd-hero-06__top">
+            <div class="mxd-hero-06__content">
+              <div class="mxd-hero-06__video">
+                <video class="video" preload="auto" autoplay="autoplay" loop="loop" muted="muted"
+                  poster="https://dummyimage.com/1920x1080/5d5d5d/838383">
+                  <source type="video/mp4" src="faw_site-video/2-variant.mp4">
+                  <!-- <source type="video/mp4" src="faw_site-video/1-variant.mp4"> -->
+                </video>
+                <div class="hero-06-video__cover"></div>
+              </div>
+              <div class="mxd-hero-06__data">
+                <div class="mxd-hero-06__headline">
+                  <div class="hero-06-headline__descr">
+                    <p class="loading__item text">Vum — bu muhandislik tafakkuri va
+                      sharq falsafasining metaldagi aksidir. Har bir FAW avtomobili orqali yuqori
+                      texnologiyalar, mukammallikka intilish va ming yillik tarixga ega Osiyo madaniyati uyg'unlashadi.
+                    </p>
+                    <div class="hero-06-headline__btn loading__item">
+                      <a href="#0" class="btn-rotating btn-rotating-blur-outline ver-04 permanent-desktop">
+                        <!-- SVG rotating text -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                          x="0px" y="0px" viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;"
+                          xml:space="preserve" class="btn-rotating__text animate-rotation" data-value="360">
+                          <defs>
+                            <path id="textPath"
+                              d="M149.7,80c0,38.5-31.2,69.7-69.7,69.7S10.3,118.5,10.3,80S41.5,10.3,80,10.3S149.7,41.5,149.7,80z" />
+                          </defs>
+                          <g>
+                            <use xlink:href="#textPath" fill="none"></use>
+                            <text>
+                              <!-- button text here!!! -->
+                              <textPath xlink:href="#textPath">FAW — Ishonch✦Barqarorlik✦Quvvat FAWda✦</textPath>
+                            </text>
+                          </g>
+                        </svg>
+                        <!-- image -->
+                        <img class="btn-rotating__image" src="faw_site-img/faw-logo.png" alt="Object">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="hero-06-headline__content">
+                    <h1 class="hero-06-headline__title">FAW Trucks - Sizning ishonchli hamkoringiz</h1>
+                    <div class="mxd-hero-06__marquee loading__item">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mxd-hero-06__btn-mobile">
+            <a href="#0" class="btn-rotating btn-rotating-blur-outline ver-04 permanent-desktop">
+              <!-- SVG rotating text -->
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve"
+                class="btn-rotating__text animate-rotation" data-value="360">
+                <defs>
+                  <path id="textPathDownloadCV"
+                    d="M149.7,80c0,38.5-31.2,69.7-69.7,69.7S10.3,118.5,10.3,80S41.5,10.3,80,10.3S149.7,41.5,149.7,80z" />
+                </defs>
+                <g>
+                  <use xlink:href="#textPathDownloadCV" fill="none"></use>
+                  <text>
+                    <!-- button text here!!! -->
+                    <textPath xlink:href="#textPathDownloadCV">FAW — Ishonch✦Barqarorlik✦Quvvat FAWda✦</textPath>
+                  </text>
+                </g>
+              </svg>
+              <!-- image -->
+              <img class="btn-rotating__image" src="faw_site-img/faw-logo.png" alt="Object">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Секция героя (конец) -->
+
+    <!-- Секция — превью блога (начало) -->
+    <div class="mxd-section padding-blog">
+      <div class="mxd-container grid-container">
+
+        <!-- Блок — заголовок секции (начало) -->
+        <div class="mxd-block">
+          <div class="mxd-section-title pre-grid">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
+                <div class="col-12 col-xl-12 mxd-grid-item no-margin">
+                  <div class="mxd-section-title__hrtitle">
+                    <h2 class="reveal-type anim-uni-in-up">Bizning Mashinalar</h2>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-8 mxd-grid-item no-margin">
+                  <div class="mxd-section-title__hrdescr">
+                    <p class="anim-uni-in-up">Vum — kuch va ishonch timsoli.
+                      Yo'llar uni tanlaydi, u yo'ldan qo'rqmaydi.
+                      Har bir burilish — yangi imkoniyat,
+                      Vum bilan hayot doim oldinga intiladi.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-4 mxd-grid-item no-margin">
+                  <div class="mxd-section-title__hrcontrols anim-uni-in-up">
+                    <a class="btn btn-anim btn-default btn-outline slide-right-up" href="faw_main-models.html">
+                      <span class="btn-caption">Barcha modellar</span>
+                      <i class="ph-bold ph-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Блок — заголовок секции (конец) -->
+
+        <!-- Блок — карточки превью (начало) -->
+        <div class="mxd-block">
+          <div class="mxd-blog-preview">
+            <div class="container-fluid p-0">
+              <div class="row g-4">
+                <!-- item -->
+                <div class="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                  <a class="mxd-blog-preview__media" href="javascript:void(0)">
+                    <div class="mxd-blog-preview__image blog-preview-image-1 parallax-img-small">
+                      <img class="parallax-img-small" src="faw_site-img/faw-truck_1.png" alt="Blog Preview Image">
+                    </div>
+                    <div class="mxd-blog-preview__tags">
+                      <span class="tag tag-default tag-permanent">FAW</span>
+                    </div>
+                  </a>
+                  <div class="mxd-blog-preview__data">
+                    <a class="anim-uni-in-up" href="javascript:void(0)">Ishonchli <span>avtofurgonlar</span> —
+                      yuklaringiz har doim manzilda</a>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                  <a class="mxd-blog-preview__media" href="javascript:void(0)">
+                    <div class="mxd-blog-preview__image blog-preview-image-2 parallax-img-small">
+                      <img class="parallax-img-small" src="faw_site-img/faw-truck_2.png" alt="Blog Preview Image">
+                    </div>
+                    <div class="mxd-blog-preview__tags">
+                      <span class="tag tag-default tag-permanent">FAW</span>
+                    </div>
+                  </a>
+                  <div class="mxd-blog-preview__data">
+                    <a class="anim-uni-in-up" href="javascript:void(0)"><span>Quvvatli va bardoshli</span> FAW
+                      furgonlari har qanday yo'lga tayyor</a>
+                  </div>
+                </div>
+                <!-- item -->
+                <div class="col-12 col-xl-4 mxd-blog-preview__item mxd-grid-item animate-card-3">
+                  <a class="mxd-blog-preview__media" href="javascript:void(0)">
+                    <div class="mxd-blog-preview__image blog-preview-image-3 parallax-img-small">
+                      <img class="parallax-img-small" src="faw_site-img/faw-truck_3.png" alt="Blog Preview Image">
+                    </div>
+                    <div class="mxd-blog-preview__tags">
+                      <span class="tag tag-default tag-permanent">FAW</span>
+                    </div>
+                  </a>
+                  <div class="mxd-blog-preview__data">
+                    <a class="anim-uni-in-up" href="javascript:void(0)"><span>Ko'p maqsadli shassilar</span> — sizning
+                      biznesingiz uchun mustahkam asos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Блок — карточки превью (конец) -->
+
+      </div>
+    </div>
+    <!-- Секция — превью блога (конец) -->
+
+    <!-- Секция — слайдер FAW (начало) -->
+    <div class="mxd-section overflow-hidden" style="margin-top: 6.3rem;">
+      <div class="mxd-container">
+
+        <!-- Блок — изображение слайдера (начало) -->
+        <div class="mxd-block">
+          <div class="faw-bg">
+            <img src="faw_site-img/slider-foto_img/bg-slider.jpg" alt="FAW Slider Background" class="faw-bg-image">
+          </div>
+          <div class="faw-slider-container">
+            <div class="faw-slider-main">
+              <button class="faw-slider-arrow left-btn" aria-label="back">&#8592;</button>
+              <div class="faw-slider-images" id="slider-track">
+                <div class="faw-slide left" id="slide-left"></div>
+                <div class="faw-slide center" id="slide-center"></div>
+                <div class="faw-slide right" id="slide-right"></div>
+              </div>
+              <button class="faw-slider-arrow right-btn" aria-label="forward">&#8594;</button>
+            </div>
+            <div class="faw-slider-info" id="slider-info"></div>
+          </div>
+        </div>
+        <!-- Блок — изображение слайдера (конец) -->
+
+      </div>
+    </div>
+    <!-- Секция — слайдер FAW (конец) -->
+    <!-- Секция — контактная форма (начало) -->
+    <div class="mxd-section" id="faw-main-contact-form">
+      <div class="mxd-container mxd-form-container">
+
+        <!-- НОВАЯ ФОРМА (шаблонный дизайн) -->
+        <div class="mxd-block">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
+
+              <!-- Left Column - Our Original Contact Info -->
+              <div class="col-12 col-md-6 mxd-grid-item animate-card-3 mt-0">
+                <div class="contact-info">
+                  <div class="contact-info__content">
+                    <h2 class="contact-info__title anim-uni-in-up">Biz bilan bog'laning</h2>
+                    <p class="contact-info__description anim-uni-in-up">
+                      Vum bo'yicha savollaringiz bormi? Bizning mutaxassislar sizga yordam berishga tayyor.
+                      Formani to'ldiring va biz tez orada siz bilan bog'lanamiz.
+                    </p>
+
+                    <div class="contact-info__details">
+                      <div class="contact-detail anim-uni-in-up">
+                        <div class="contact-detail__icon">
+                          <i class="ph-fill ph-phone"></i>
+                        </div>
+                        <div class="contact-detail__content">
+                          <h4 class="contact-detail__title">Telefon</h4>
+                          <a href="tel:+998712345678" class="contact-detail__value">+998 71 234-56-78</a>
+                        </div>
+                      </div>
+
+                      <div class="contact-detail anim-uni-in-up">
+                        <div class="contact-detail__icon">
+                          <i class="ph-fill ph-envelope"></i>
+                        </div>
+                        <div class="contact-detail__content">
+                          <h4 class="contact-detail__title">Email</h4>
+                          <a href="mailto:info@fawtrucks.uz" class="contact-detail__value">info@fawtrucks.uz</a>
+                        </div>
+                      </div>
+
+                      <div class="contact-detail anim-uni-in-up">
+                        <div class="contact-detail__icon">
+                          <i class="ph-fill ph-map-pin"></i>
+                        </div>
+                        <div class="contact-detail__content">
+                          <h4 class="contact-detail__title">Manzil</h4>
+                          <p class="contact-detail__value">Toshkent,Abdulla Kaxxar ko'chasi 2А,</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column - Form with Template Design -->
+              <div class="col-12 col-md-6 mxd-grid-item">
+                <div class="mxd-block__content contact">
+                  <div class="mxd-block__inner-form loading__fade">
+                    <div class="form-container">
+
+                      <!-- Сообщения-ответы (начало) -->
+                      <div class="form__reply centered text-center">
+                        <i class="ph-fill ph-smiley-wink reply__icon"></i>
+                        <p class="reply__title">Bajarildi!</p>
+                        <span class="reply__text">Xabaringiz uchun rahmat. Biz tez orada javob beramiz.</span>
+                      </div>
+                      <!-- Сообщения-ответы (конец) -->
+
+                      <!-- Форма контакта (начало) -->
+                      <form class="form contact-form">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="FAW Trucks">
+                        <input type="hidden" name="admin_email" value="info@fawtrucks.uz">
+                        <input type="hidden" name="form_subject" value="FAW Contact Form Message">
+                        <!-- END Hidden Required Fields-->
+                        <div class="container-fluid p-0">
+                          <div class="row gx-0">
+                            <div class="col-12 mxd-grid-item anim-uni-in-up">
+                              <input type="text" name="Name" placeholder="Ismingiz*" required>
+                            </div>
+                            <div class="col-12 mxd-grid-item anim-uni-in-up">
+                              <select name="Region" required>
+                                <option value="" disabled selected>Viloyatni tanlang*</option>
+                                <option value="Toshkent shahri">Toshkent shahri</option>
+                                <option value="Andijon viloyati">Andijon viloyati</option>
+                                <option value="Buxoro viloyati">Buxoro viloyati</option>
+                                <option value="Fargʻona viloyati">Fargʻona viloyati</option>
+                                <option value="Jizzax viloyati">Jizzax viloyati</option>
+                                <option value="Xorazm viloyati">Xorazm viloyati</option>
+                                <option value="Namangan viloyati">Namangan viloyati</option>
+                                <option value="Navoiy viloyati">Navoiy viloyati</option>
+                                <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
+                                <option value="Samarqand viloyati">Samarqand viloyati</option>
+                                <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
+                                <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
+                                <option value="Toshkent viloyati">Toshkent viloyati</option>
+                                <option value="Qoraqalpogʻiston Respublikasi">Qoraqalpogʻiston Respublikasi</option>
+                              </select>
+                            </div>
+                            <div class="col-12 mxd-grid-item anim-uni-in-up">
+                              <input type="tel" name="Phone" placeholder="Telefon raqami*" pattern="[+]*[0-9\s\-\(\)]*" required>
+                            </div>
+                            <div class="col-12 mxd-grid-item anim-uni-in-up">
+                              <textarea name="Message"
+                                placeholder="Qanday yuk mashinasiga qiziqasiz? Qo'shimcha savollar*"
+                                required></textarea>
+                            </div>
+                            <div class="col-12 mxd-grid-item anim-uni-in-up">
+                              <button class="btn btn-anim btn-default btn-large btn-opposite slide-right-up shimmer-btn"
+                                type="submit">
+                                <span class="btn-caption">Qongʻiroq kutaman</span>
+                                <span class="shimmer"></span>
+                                <i class="ph-bold ph-arrow-up-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <!-- Форма контакта (конец) -->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Блок — контактная форма (конец) -->
+
+      </div>
+    </div>
+    <!-- Секция — контактная форма (конец) -->
+    <!-- Section - Inner Pages Slider Start -->
+    <div class="mxd-section padding-pre-grid">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - Inner Pages Slider Start -->
+        <div class="mxd-block">
+          <h2 class="reveal-type anim-uni-in-up" style="text-align: center;">Yangiliklar</h2>
+          <!-- Slider main container -->
+          <div class="mxd-demo-swiper mxd-grid-item anim-uni-in-up">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">Ishonchli hamkor – barqaror kelajak: VUM kompaniyasi dilerlik
+                        konferensiyasi bo‘lib o‘td</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      13 iyul kuni Toshkentda Van Universal Motors (VUM) kompaniyasi tashabbusi bilan O‘zbekiston
+                      bo‘ylab faoliyat yuritayotgan dilerlik markazlari vakillari ishtirokida yirik konferensiya bo‘lib
+                      o‘tdi. Tadbir “Ishonchli hamkor — barqaror kelajak” shiori ostida o‘tkazildi.
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/1.jpg" alt="Services Image">
+                  </div>
+                </div>
+              </div>
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">Van Universal Motors (VUM) va FAW Jiefang ShOS doirasida sanoat
+                        kooperatsiyasi bo‘yicha memorandum imzoladi</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">10 aprel kuni Tyanszin Binhay Yangi hududida Xitoy–Shanxay hamkorlik
+                      tashkiloti (ShHT)ning barqaror rivojlanish yo‘lida sanoat kooperatsiyasi bo‘yicha konferensiyasi
+                      bo‘lib o‘tdi. Tadbirning asosiy voqeasi Van Universal Motors kompaniyasi va FAW Jiefang Group Co.,
+                      Ltd. o‘rtasida ishlab chiqarishni mahalliylashtirish va sanoat hamkorligini rivojlantirishga
+                      qaratilgan qo‘shma loyiha bo‘yicha memorandum imzolanishi bo‘ldi.</p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/5.jpg" alt="About Us Image">
+                  </div>
+                </div>
+              </div>
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">VAN UNIVERSAL MOTORS va ASSET LEASING AND FINANCE: Foydali lizing
+                        – ishonchli yechim!VAN UNIVERSAL MOTORS va ASSET LEASING AND FINANCE: Foydali lizing – ishonchli
+                        yechim!</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      VAN UNIVERSAL MOTORS – O‘zbekistonda FAW yuk va maxsus texnika avtomobillari rasmiy ishlab
+                      chiqaruvchisi, ASSET LEASING AND FINANCE bilan hamkorlik o‘rnatdi!
+                      Bu sizga FAW yuk avtomobillari va maxsus texnikasini qulay lizing shartlarida xarid qilish
+                      imkoniyatini taqdim etadi. Ushbu imkoniyatdan foydalanib, biznesingizni rivojlantiring va uni
+                      yangi bosqichga olib chiqing!
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/2.jpg" alt="Team Image">
+                  </div>
+                </div>
+              </div>
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">VAN UNIVERSAL MOTORS va Mikro Leasing: ishonchli hamkorlik,
+                        foydali yechimlar!</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      FAW yuk avtomobillari va maxsus texnikasini qulay lizing shartlarida xarid qiling!
+                      VAN UNIVERSAL MOTORS – O‘zbekistonda FAW yuk va maxsus texnika avtomobillari rasmiy ishlab
+                      chiqaruvchisi, Mikro Leasing bilan hamkorlik o‘rnatdi!
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/3.jpg" alt="Pricing Image">
+                  </div>
+                </div>
+              </div>
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">VAN UNIVERSAL MOTORS va Hamkorbank: yangi hamkorlik – yangi
+                        imkoniyatlar!</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      Endi sizda FAW yuk avtomobillari va maxsus texnikasini dastlabki to‘lovsiz, imtiyozli foiz
+                      stavkalari bo‘yicha yoki halol islomiy lizing doirasida xarid qilish imkoniyati mavjud. Xarid
+                      qilish uchun texnika qiymatining 30% miqdorida garov kiritish talab etiladi. Yillik foiz
+                      stavkalari 20% dan boshlanadi. Biz sizning biznesingizni rivojlantirish uchun qulay
+                      shart-sharoitlar yaratamiz.
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/4.jpg" alt="About Me Image">
+                  </div>
+                </div>
+              </div>
+
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">FAW TIGER V avtofurgonlariga 20 million so‘mgacha chegirma!</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      30 noyabrgacha sizda FAW TIGER V avtofurgonini 20 million so‘mgacha foyda bilan xarid qilishning
+                      noyob imkoniyati mavjud. Biznesingizni qulay shartlarda rivojlantirish imkoniyatini boy bermang!
+                      Aksiya tafsilotlarini bizning maslahatchilarimizdan bilib oling.
+                      <span>08.11.2024</span>
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/6.jpg" alt="Support Image">
+                  </div>
+                </div>
+              </div>
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">Ishonchli FAW Tiger V samosvali — qurilish maydonchangizdagi
+                        hamkoringiz</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      FAW Tiger V samosvali — bu mustahkam va unumdor texnikani talab qiladigan qurilish va xo‘jalik
+                      vazifalari uchun ideal yechim. Ushbu ixcham va ishonchli yuk mashinasi har qanday sharoitda
+                      ishlash uchun yaratilgan bo‘lib, samaradorlik va tejamkorlikni ta’minlaydi.
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/7.jpg" alt="FAQ Image">
+                  </div>
+                </div>
+              </div>
+              <!-- single slide -->
+              <div class="swiper-slide mxd-demo-swiper__slide">
+                <div class="slide-content">
+                  <!-- Аватарка и заголовок в одной строке -->
+                  <div class="slide-header-row">
+                    <div class="slide-avatar">
+                      <img src="faw_site-img/avatars/Umarhoja.jpg" alt="Avatar" class="avatar-image">
+                    </div>
+                    <div class="slide-header">
+                      <h3 class="slide-header__title">To‘liq metall korpusli FAW Tiger V avtofurgoni — biznes uchun
+                        maksimal universallik</h3>
+                    </div>
+                  </div>
+
+                  <!-- Полный текст -->
+                  <div class="slide-text">
+                    <p class="slide-text__content">
+                      To‘liq metall korpusli FAW Tiger V avtofurgoni — bu ishonchlilik, sig‘imdorlik va xavfsizlikni
+                      qadrlaydigan tadbirkorlar tanlovi. Ushbu model turli xil yuklarni, jumladan tashqi omillardan
+                      himoyani talab qiladigan tovarlarni tashish uchun ideal mos keladi.
+                    </p>
+                  </div>
+
+                  <!-- Картинка -->
+                  <div class="slide-image">
+                    <img src="faw_site-img/news/8.jpg" alt="Contact Image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev mxd-slider-btn mxd-slider-btn-round-prev v2">
+              <a class="btn btn-round btn-round-small btn-outline slide-left anim-no-delay" href="#0">
+                <i class="ph ph-arrow-left"></i>
+              </a>
+            </div>
+            <div class="swiper-button-next mxd-slider-btn mxd-slider-btn-round-next v2">
+              <a class="btn btn-round btn-round-small btn-outline slide-right anim-no-delay" href="#0">
+                <i class="ph ph-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Block - Inner Pages Slider End -->
+
+      </div>
+    </div>
+    <!-- Section - Inner Pages Slider End -->
+    <!-- Секция — CTA (начало) -->
+    <div class="mxd-section overflow-hidden">
+      <div class="mxd-container">
+
+        <!-- Блок — CTA (начало) -->
+        <div class="mxd-block">
+          <div class="mxd-promo">
+            <div class="mxd-promo__inner anim-zoom-out-container">
+              <!-- background -->
+              <div class="mxd-promo__bg"></div>
+              <!-- caption -->
+              <div class="mxd-promo__content">
+                <div class="mxd-promo__layout">
+                  <div class="mxd-promo__icon-section">
+                    <span class="mxd-promo__icon">
+                      <img src="faw_site-img/faw-logo.svg" alt="FAW Icon">
+                      <span class="mxd-promo__icon-tx reveal-type">FAW TRUCKS</span>
+                    </span>
+                  </div>
+                  <div class="mxd-promo__text-section">
+                    <span class="mxd-promo__caption reveal-type">
+                      FAW bu – ishonchli texnika. Har qanday iqlimda, har qanday yo'lda FAW o'zini ko'rsatadi.
+                      Buning ortida esa o'z ishini sidqidildan bajarayotgan kuchli va jips jamoamiz turibdi.
+                      Har bir mijoz biz uchun muhim, har bir yuk – mas'uliyat.
+                      FAW jamoasi – bu tajriba, halollik va xizmatga sadoqat!
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Блок — CTA (конец) -->
+
+      </div>
+    </div>
+    <!-- Секция — CTA (конец) -->
+
+  </main>
+  <!-- Контент страницы (конец) -->
+
+  <!-- Футер (начало) -->
+  <footer id="mxd-footer" class="mxd-footer">
+
+    <!-- Футер — полноширинный текст (начало) -->
+    <div class="mxd-footer__text-wrap">
+      <div class="fullwidth-text__tl-trigger"></div>
+      <div class="mxd-footer__fullwidth-text personal anim-top-to-bottom">
+        <h1 class="footer-title">FAW TRUCKS</h1>
+      </div>
+    </div>
+    <!-- Футер — полноширинный текст (конец) -->
+
+    <!-- Футер — информационные колонки (начало) -->
+    <div class="mxd-footer__footer-blocks">
+      <!-- Первый столбец -->
+      <div class="footer-blocks__column animate-card-3">
+        <div class="footer-blocks__card fullheight-card">
+          <!-- Footer navigatsiyasi -->
+          <div class="footer-blocks__nav">
+            <ul class="footer-nav">
+              <li class="footer-nav__item anim-uni-in-up">
+                <a href="#" class="footer-nav__link btn-anim">
+                  <span class="btn-caption">Bosh sahifa</span>
+                </a>
+              </li>
+              <li class="footer-nav__item anim-uni-in-up">
+                <a href="#" class="footer-nav__link btn-anim">
+                  <span class="btn-caption">Biz haqimizda</span>
+                </a>
+              </li>
+              <li class="footer-nav__item anim-uni-in-up">
+                <a href="#" class="footer-nav__link btn-anim">
+                  <span class="btn-caption">Yuk mashinalari</span>
+                </a>
+                <p class="footer-nav__counter">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px"
+                    viewBox="0 0 20 20" fill="currentColor">
+                    <path fill="currentColor"
+                      d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+                                      c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+                                      c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+                                      c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+                                      c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+                                      c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+                                      c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"></path>
+                  </svg>
+                  <span>25</span>
+                </p>
+              </li>
+              <li class="footer-nav__item anim-uni-in-up">
+                <a href="#" class="footer-nav__link btn-anim">
+                  <span class="btn-caption">Xizmatlar</span>
+                </a>
+              </li>
+              <li class="footer-nav__item anim-uni-in-up">
+                <a href="#" class="footer-nav__link btn-anim">
+                  <span class="btn-caption">Yangiliklar</span>
+                </a>
+              </li>
+              <li class="footer-nav__item anim-uni-in-up">
+                <a href="#" class="footer-nav__link btn-anim">
+                  <span class="btn-caption">Aloqa</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Havolalar -->
+          <div class="footer-blocks__links anim-uni-in-up">
+            <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="#">
+              <span class="btn-caption">Maxfiylik siyosati</span>
+            </a>
+            <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="#">
+              <span class="btn-caption">Foydalanish shartlari</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Второй столбец -->
+      <div class="footer-blocks__column animate-card-3">
+        <div class="footer-blocks__card">
+          <p class="mxd-point-subtitle anim-uni-in-up">
+            <i class="ph-fill ph-envelope"></i>
+            <a href="mailto:info@fawtrucks.uz?subject=FAW%20TRUCKS%20bo'yicha%20so'rov"><span
+                style="font-weight: bold;">eMail: </span>info@fawtrucks.uz</a>
+          </p>
+          <p class="mxd-point-subtitle anim-uni-in-up">
+            <i class="ph-fill ph-phone"></i>
+            <a href="tel:+998712345678"><span style="font-weight: bold;">Telefon: </span>+998 71 234-56-78</a>
+          </p>
+          <p class="mxd-point-subtitle anim-uni-in-up">
+            <i class="ph-fill ph-map-pin"></i>
+            <a href="https://yandex.uz/maps/-/CHxF6XPZ" target="_blank" rel="noopener noreferrer"><span
+                style="font-weight: bold;">Manzil: </span>Toshkent,Abdulla Kaxxar ko'chasi 2А,</a>
+          </p>
+        </div>
+
+        <div class="footer-blocks__card card-maps" style="padding:0;overflow: hidden;height: 100%;">
+          <!-- Встроенная карта Yandex (растянута на всю карточку, уменьшен зум) -->
+          <div style="position:relative;overflow:hidden;width:100%;height:100%;">
+            <a href="https://yandex.uz/maps/org/187051650206/?utm_medium=mapframe&utm_source=maps" target="_blank"
+              rel="noopener noreferrer" style="color:#eee;font-size:12px;position:absolute;top:0px;">Faw Trucks</a>
+            <a href="https://yandex.uz/maps/10335/tashkent/category/car_dealership/184105322/?utm_medium=mapframe&utm_source=maps"
+              target="_blank" rel="noopener noreferrer"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Автосалон в Ташкенте</a>
+            <iframe
+              src="https://yandex.uz/map-widget/v1/?ll=69.264431%2C41.271680&mode=poi&poi%5Bpoint%5D=69.264339%2C41.271780&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D187051650206&z=16"
+              width="100%" height="100%" frameborder="1" allowfullscreen="true"
+              style="position:relative;border:0;min-height:220px;"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Третий столбец -->
+      <div class="footer-blocks__column animate-card-3">
+        <div class="footer-blocks__card fullheight-card">
+          <div class="footer-blocks__block">
+            <div class="footer-blocks__title anim-uni-in-up">
+              <p class="footer-blocks__title-l">Ijtimoiy tarmoqlar</p>
+            </div>
+
+            <div class="footer-blocks__socials">
+              <ul class="footer-socials">
+                <li class="footer-socials__item anim-uni-in-up">
+                  <img src="faw_site-img/icons/main-social__icon/facebook.png" alt="" class="footer-socials__icon">
+                  <a href="https://www.facebook.com/fawtrucksuz" class="footer-socials__link"
+                    target="_blank">Facebook</a>
+                </li>
+                <li class="footer-socials__item anim-uni-in-up">
+                  <img src="faw_site-img/icons/main-social__icon/instagram.png" alt="" class="footer-socials__icon">
+                  <a href="https://www.instagram.com/fawtrucks.uz" class="footer-socials__link"
+                    target="_blank">Instagram</a>
+                </li>
+                <li class="footer-socials__item anim-uni-in-up">
+                  <img src="faw_site-img/icons/main-social__icon/telegram.png" alt="" class="footer-socials__icon">
+                  <a href="https://t.me/fawtrucksuz" class="footer-socials__link" target="_blank">Telegram</a>
+                </li>
+                <li class="footer-socials__item anim-uni-in-up">
+                  <img src="faw_site-img/icons/main-social__icon/youtube.png" alt="" class="footer-socials__icon">
+                  <a href="https://www.youtube.com/c/fawtrucksuz" class="footer-socials__link"
+                    target="_blank">YouTube</a>
+                </li>
+                <li class="footer-socials__item anim-uni-in-up">
+                  <img src="faw_site-img/icons/main-social__icon/linkedin.png" alt="" class="footer-socials__icon">
+                  <a href="https://www.linkedin.com/company/faw-trucks-uzbekistan" class="footer-socials__link"
+                    target="_blank">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-blocks__links anim-uni-in-up">
+            <p class="t-xsmall t-muted">
+              <a class="no-effect" href="#" target="_blank">FAW TRUCKS</a>
+              © 2025 - Barcha huquqlar himoyalangan
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Футер — информационные колонки (конец) -->
+
+  </footer>
+  <!-- Футер (конец) -->
+
+  <!-- Кнопка «вверх» (начало) -->
+  <a href="#0" id="to-top" class="btn btn-to-top slide-up anim-no-delay">
+    <i class="ph ph-arrow-up"></i>
+  </a>
+  <!-- Кнопка «вверх» (конец) -->
+
+  <!-- Подключение скриптов (начало) -->
+  <script src="template/js/libs.min.js"></script>
+  <script src="template/js/app.js"></script>
+  <!-- Счётчики FAW (инициализация) -->
+  <script src="faw-js/faw.js"></script>
+  <script>
+    // Универсальный плавный скролл, сразу учитывающий высоту фиксированного хедера
+    (function () {
+      function getHeaderHeight() {
+        try { var h = document.getElementById('header'); return h ? h.offsetHeight || 0 : 0; } catch (e) { return 0; }
+      }
+
+      function scrollToElementById(id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var headerH = getHeaderHeight();
+        var offset = 18; // отступ под хедером
+        var rect = el.getBoundingClientRect();
+        var targetY = Math.max(0, Math.round(window.pageYOffset + rect.top - headerH - offset));
+        try { window.scrollTo({ top: targetY, behavior: 'smooth' }); }
+        catch (e) { window.scrollTo(0, targetY); }
+      }
+
+      // Делегирование: клики по ссылкам вида href="#id"
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href^="#"]');
+        if (!a) return;
+        var href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        var id = href.slice(1);
+        if (!id) return;
+        if (document.getElementById(id)) {
+          e.preventDefault();
+          scrollToElementById(id);
+        }
+      }, false);
+    })();
+  </script>
+  <!-- Мобильный фикс: надёжно отключаем инлайн-стили параллакса для маленьких экранов -->
+  <script>
+    (function () {
+      var observer = null;
+      function cleanNode(el) {
+        try {
+          // сбрасываем распространённые inline-свойства, которые создают абсолютное позиционирование параллакса
+          el.style.transform = 'none';
+          el.style.webkitTransform = 'none';
+          el.style.inset = '';
+          el.style.top = '';
+          el.style.left = '';
+          el.style.right = '';
+          el.style.bottom = '';
+          // предпочитаем static, чтобы отменить absolute
+          el.style.position = 'static';
+        } catch (e) {/* игнорируем ошибки доступа */ }
+      }
+
+      function disableParallaxInline() {
+        if (window.innerWidth > 550) return;
+        var containers = document.querySelectorAll('.mxd-blog-preview__image');
+        containers.forEach(function (container) {
+          // очищаем контейнер и всех потомков
+          cleanNode(container);
+          container.querySelectorAll('*').forEach(function (child) { cleanNode(child); });
+
+          // гарантируем, что изображение корректно заполнит контейнер
+          var img = container.querySelector('img');
+          if (img) {
+            img.style.transform = 'none';
+            img.style.webkitTransform = 'none';
+            img.style.inset = '';
+            img.style.top = '';
+            img.style.left = '';
+            img.style.right = '';
+            img.style.bottom = '';
+            img.style.position = 'static';
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            img.style.objectPosition = 'center center';
+            img.style.margin = '0';
+            img.style.display = 'block';
+          }
+        });
+      }
+
+      function startObserver() {
+        if (window.innerWidth > 550) { if (observer) { observer.disconnect(); observer = null; } return; }
+        if (observer) return; // уже наблюдаем
+        var config = { attributes: true, attributeFilter: ['style'], subtree: true, childList: true };
+        observer = new MutationObserver(function (mutations) {
+          // при любом изменении атрибутов/добавлении узлов внутри .mxd-blog-preview__image — повторно очищаем
+          var shouldRun = false;
+          for (var i = 0; i < mutations.length; i++) {
+            var m = mutations[i];
+            if (m.type === 'attributes' || m.type === 'childList') {
+              if (m.target && m.target.closest && m.target.closest('.mxd-blog-preview__image')) { shouldRun = true; break; }
+              if (m.addedNodes && m.addedNodes.length) { for (var j = 0; j < m.addedNodes.length; j++) { if (m.addedNodes[j].closest && m.addedNodes[j].closest('.mxd-blog-preview__image')) { shouldRun = true; break; } } }
+            }
+          }
+          if (shouldRun) disableParallaxInline();
+        });
+        // привязываем наблюдатель к каждому контейнеру
+        document.querySelectorAll('.mxd-blog-preview__image').forEach(function (node) { observer.observe(node, config); });
+      }
+
+      // жизненный цикл: инициализация и повторные проверки
+      function init() { disableParallaxInline(); startObserver(); }
+      window.addEventListener('DOMContentLoaded', init);
+      window.addEventListener('load', init);
+      // повторная оценка при изменении размера окна
+      var resizeTimer;
+      window.addEventListener('resize', function () { clearTimeout(resizeTimer); resizeTimer = setTimeout(function () { disableParallaxInline(); startObserver(); }, 200); });
+      // запускаем несколько раз, чтобы поймать поздно инициализирующиеся скрипты
+      var runs = 0; var interval = setInterval(function () { disableParallaxInline(); startObserver(); runs++; if (runs > 12) { clearInterval(interval); } }, 500);
+    })();
+  </script>
+
+  <!-- Load Scripts End -->
+
+</body>
+
+</html>
