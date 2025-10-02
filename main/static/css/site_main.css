@@ -2194,7 +2194,7 @@ body:not([data-theme]) .language-option:hover {
     width: 66.66%;
     /* 2/3 для изображения справа */
     height: 100%;
-    background-image: url('faw_site-img/site_footer.jpg');
+    background-image: url("/static/images/site_footer.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

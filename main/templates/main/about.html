@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -17,11 +18,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Template Favicon & Icons Start -->
-  <link rel="shortcut icon" href="img/icon/favicon_5.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/icon/_iiiiapple.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="img/icon/_iiii176.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="img/icon/_iiii1156.png">
-  <link rel="apple-touch-startup-image" href="img/icon/_iiii1.png ">
+  <link rel="shortcut icon" href="{% static 'images/icon/favicon_5.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'images/favicon/icon.svg' %}" type="image/svg+xml">
   <!-- Template Favicon & Icons End -->
 
   <!-- Facebook Metadata Start -->
@@ -34,12 +32,12 @@
   <!-- Facebook Metadata End -->
 
   <!-- Template Styles Start -->
-  <link rel="stylesheet" type="text/css" href="template/css/loaders/loader.css">
-  <link rel="stylesheet" type="text/css" href="template/css/plugins.css">
-  <link rel="stylesheet" type="text/css" href="template/css/main_site.css">
-  <link rel="stylesheet" type="text/css" href="site_main.css">
-  <link rel="stylesheet" type="text/css" href="breadcrumbs.css">
-  <link rel="stylesheet" type="text/css" href="site_about.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/loaders/loader.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/plugins.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main_site.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/site_main.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/breadcrumbs.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/site_about.css' %}">
 
 
   <!-- Template Styles End -->
@@ -69,215 +67,7 @@
   </div>
   <!-- Loader End -->
   <!-- Меню и шапка (начало) -->
-  <nav id="header" class="mxd-nav__wrap" data-lenis-prevent="">
-
-    <!-- Логотип в шапке (начало) -->
-    <div class="mxd-header__logo loading__fade">
-      <a href="site_main.html" class="mxd-logo">
-        <img src="faw_site-img/LOGO-VUM.png" class="mxd-logo__image" alt="FAW Logo">
-        <!-- <span class="mxd-logo__text">Faw</span> -->
-      </a>
-    </div>
-    <!-- Логотип в шапке (конец) -->
-
-    <!-- Навигация для десктопа (начало) -->
-    <div class="mxd-header__nav loading__fade">
-      <ul class="desktop-menu">
-        <li class="desktop-menu__item active">
-          <a href="site_main.html" class="desktop-menu__link">Bosh sahifa</a>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="#" class="desktop-menu__link">
-            Dilerlar
-            <span class="desktop-menu__arrow">▼</span>
-          </a>
-          <ul class="desktop-submenu">
-            <li class="desktop-submenu__item">
-              <a href="site_dealers.html" class="desktop-submenu__link">Diler topish</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="become_potential_dealer.html" class="desktop-submenu__link">Diler bo'lish</a>
-            </li>
-          </ul>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="site_news.html" class="desktop-menu__link">Kompaniya yangiliklari</a>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="faw_main-models.html" class="desktop-menu__link">
-            Modellar
-            <span class="desktop-menu__arrow">▼</span>
-          </a>
-          <ul class="desktop-submenu">
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Shatakchi mashinalar</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Samosvallar</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Maxsus texnika</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Avtofurgonlar</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Shassilar</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Tiger V</a>
-            </li>
-            <li class="desktop-submenu__item">
-              <a href="faw_main-models.html" class="desktop-submenu__link">Tiger VR</a>
-            </li>
-          </ul>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="site_about.html" class="desktop-menu__link">Kompaniya haqida</a>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="site_lizing.html" class="desktop-menu__link">Lizing</a>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="site_service.html" class="desktop-menu__link">Servis</a>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="site_contact.html" class="desktop-menu__link">Bo'glanish</a>
-        </li>
-        <li class="desktop-menu__item">
-          <a href="jobs-page.html" class="desktop-menu__link">Vakansiya</a>
-        </li>
-      </ul>
-    </div>
-    <!-- Навигация для десктопа (конец) -->
-
-    <!-- Элементы управления шапкой (начало) -->
-    <div class="mxd-header__controls loading__fade">
-      <div class="language-switcher">
-        <span class="language-current">UZ</span>
-        <span class="language-arrow">▼</span>
-        <div class="language-dropdown">
-          <a href="#" class="language-option" data-lang="uz">O'zbek</a>
-          <a href="#" class="language-option" data-lang="ru">Русский</a>
-          <a href="#" class="language-option" data-lang="en">English</a>
-        </div>
-      </div>
-      <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode"
-        aria-checked="true"></button>
-      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right-up" style="gap: 0;"
-        href="#faw-main-contact-form" aria-label="Перейти к форме связи">
-        <span class="btn-caption"></span>
-        <i class="ph-bold ph-arrow-up-right"></i>
-      </a>
-    </div>
-    <!-- Элементы управления шапкой (конец) -->
-
-    <!-- Гамбургер (начало) -->
-    <div class="mxd-nav__contain loading__fade">
-      <a href="#0" class="mxd-nav__hamburger">
-        <!-- flip element -->
-        <div class="hamburger__base"></div>
-        <div class="hamburger__line"></div>
-        <div class="hamburger__line"></div>
-      </a>
-    </div>
-    <!-- Гамбургер (конец) -->
-
-    <!-- Основная мобильная навигация (начало) -->
-    <div class="mxd-menu__wrapper">
-      <!-- background active layer -->
-      <div class="mxd-menu__base"></div>
-      <!-- menu container -->
-      <div class="mxd-menu__contain">
-        <div class="mxd-menu__inner">
-          <!-- left side -->
-          <div class="mxd-menu__left">
-            <p class="mxd-menu__caption menu-fade-in">🚚 FAW Trucks Uzbekistan<br>Ishonchli transport yechimlari</p>
-            <div class="main-menu">
-              <nav class="main-menu__content">
-                <ul id="main-menu" class="main-menu__accordion">
-                  <li class="main-menu__item">
-                    <a class="main-menu__link btn btn-anim" href="site_main.html">
-                      <span class="btn-caption">Bosh sahifa</span>
-                    </a>
-                  </li>
-                  <li class="main-menu__item">
-                    <div class="main-menu__toggle">
-                      <span class="main-menu__link btn btn-anim">
-                        <span class="btn-caption">Dilerlar</span>
-                      </span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
-                        <path
-                          d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
-                      </svg>
-                    </div>
-                    <ul class="submenu">
-                      <li class="submenu__item">
-                        <a href="site_dealers.html">Diler topish</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="become_potential_dealer.html">Diler bo'lish</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="main-menu__item">
-                    <a class="main-menu__link btn btn-anim" href="site_news.html">
-                      <span class="btn-caption">Kompaniya yangiliklari</span>
-                    </a>
-                  </li>
-                  <li class="main-menu__item">
-                    <div class="main-menu__toggle">
-                      <span class="main-menu__link btn btn-anim">
-                        <span class="btn-caption">Modellar</span>
-                      </span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
-                        <path
-                          d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
-                      </svg>
-                    </div>
-                    <ul class="submenu">
-                      <li class="submenu__item">
-                        <a href="faw_main-models.html">Yuk mashinalari</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="faw_main-models.html">Avtobuslar</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a href="faw_main-models.html">Maxsus texnika</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="main-menu__item">
-                    <a class="main-menu__link btn btn-anim" href="site_about.html">
-                      <span class="btn-caption">Kompaniya haqida</span>
-                    </a>
-                  </li>
-                  <li class="main-menu__item">
-                    <a class="main-menu__link btn btn-anim" href="site_contact.html">
-                      <span class="btn-caption">Bog'lanish</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <!-- нижняя информационная строка -->
-          <div class="mxd-menu__data menu-fade-in">
-            <p class="t-xsmall">
-              FAW Trucks Uzbekistan
-              <i class="ph-fill ph-heart t-additional"></i>
-            </p>
-            <p class="t-xsmall">
-              <i class="ph ph-copyright"></i>
-              2025
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Основная мобильная навигация (конец) -->
-
-  </nav>
+  {% include 'main/includes/header.html' %}
   <!-- Меню и шапка (конец) -->
   <!-- Page Content Start -->
   <div class="mxd-block loading-wrap">
@@ -289,8 +79,8 @@
         <div class="section-filter">
           <div aria-label="breadcrumb">
             <ol class="breadcrumb-ol">
-              <li><a href="site_main.html">Bosh sahifa</a></li>
-              <li class="active"><a href="site_about.html">VUM FAW tarixi </a></li>
+              <li><a href="{% url 'home' %}">Bosh sahifa</a></li>
+              <li class="active"><a href="{% url 'about' %}">VUM FAW tarixi </a></li>
             </ol>
           </div>
         </div>
@@ -304,7 +94,7 @@
         <div class="mxd-divider__video">
           <video class="video parallax-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted"
             data-parallax="true">
-            <source type="video/mp4" src="video/banner.mp4">
+            <source type="video/mp4" src="{% static 'videos/banner.mp4' %}">
           </video>
           <div class="text-overlay">
             <div class="pw-text-style-overline">Innovatsiyalar 2025</div>
@@ -384,7 +174,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/1.webp" alt="Image">
+            <img src="{% static 'images/history/1.webp' %}" alt="Image">
           </a>
         </div>
         <!-- 2 item -->
@@ -398,7 +188,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/2.webp" alt="Image">
+            <img src="{% static 'images/history/2.webp' %}" alt="Image">
           </a>
         </div>
         <!-- 3 item -->
@@ -412,7 +202,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/3.webp" alt="Image">
+            <img src="{% static 'images/history/3.webp' %}" alt="Image">
           </a>
         </div>
         <!-- 3.1 item -->
@@ -426,7 +216,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/3.1.webp" alt="Image">
+            <img src="{% static 'images/history/3.1.webp' %}" alt="Image">
           </a>
         </div>
         <!-- 4 item -->
@@ -441,7 +231,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/4.webp" alt="Image">
+            <img src="{% static 'images/history/4.webp' %}" alt="Image">
           </a>
         </div>
         <!-- item -->
@@ -455,7 +245,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/5.webp" alt="Image">
+            <img src="{% static 'images/history/5.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -469,7 +259,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/6.webp" alt="Image">
+            <img src="{% static 'images/history/6.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -482,7 +272,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/7.webp" alt="Image">
+            <img src="{% static 'images/history/7.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -495,7 +285,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/8.webp" alt="Image">
+            <img src="{% static 'images/history/8.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -509,7 +299,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/9.1.webp" alt="Image">
+            <img src="{% static 'images/history/9.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -523,7 +313,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/9.webp" alt="Image">
+            <img src="{% static 'images/history/9.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -537,7 +327,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/10.2.webp" alt="Image">
+            <img src="{% static 'images/history/10.2.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -553,7 +343,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/10.1.webp" alt="Image">
+            <img src="{% static 'images/history/10.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -567,7 +357,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/10.webp" alt="Image">
+            <img src="{% static 'images/history/10.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -581,7 +371,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/11.1.webp" alt="Image">
+            <img src="{% static 'images/history/11.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -595,7 +385,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/11.webp" alt="Image">
+            <img src="{% static 'images/history/11.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -609,7 +399,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/12.1.webp" alt="Image">
+            <img src="{% static 'images/history/12.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -623,7 +413,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/12.webp" alt="Image">
+            <img src="{% static 'images/history/12.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -637,7 +427,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/13.2.webp" alt="Image">
+            <img src="{% static 'images/history/13.2.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -650,7 +440,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/13.1.webp" alt="Image">
+            <img src="{% static 'images/history/13.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -663,7 +453,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/13.webp" alt="Image">
+            <img src="{% static 'images/history/13.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -680,7 +470,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/14.1.webp" alt="Image">
+            <img src="{% static 'images/history/14.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -695,7 +485,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/14.webp" alt="Image">
+            <img src="{% static 'images/history/14.webp' %}" alt="Image">
           </a>
         </div>
       </div>
@@ -713,7 +503,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/15.webp" alt="Image">
+            <img src="{% static 'images/history/15.webp' %}" alt="Image">
           </a>
         </div>
         <!-- item -->
@@ -729,7 +519,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/16.webp" alt="Image">
+            <img src="{% static 'images/history/16.webp' %}" alt="Image">
           </a>
         </div>
         <!-- item -->
@@ -745,7 +535,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/17.webp" alt="Image">
+            <img src="{% static 'images/history/17.webp' %}" alt="Image">
           </a>
         </div>
         <!-- item -->
@@ -761,7 +551,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/18.webp" alt="Image">
+            <img src="{% static 'images/history/18.webp' %}" alt="Image">
           </a>
         </div>
         <!-- item -->
@@ -776,7 +566,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/19.webp" alt="Image">
+            <img src="{% static 'images/history/19.webp' %}" alt="Image">
           </a>
         </div>
         <!-- item -->
@@ -790,7 +580,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/19.1.webp" alt="Image">
+            <img src="{% static 'images/history/19.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -803,7 +593,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/19.2.webp" alt="Image">
+            <img src="{% static 'images/history/19.2.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -816,7 +606,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/20.webp" alt="Image">
+            <img src="{% static 'images/history/20.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -829,7 +619,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/20.1.webp" alt="Image">
+            <img src="{% static 'images/history/20.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -842,7 +632,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/21.webp" alt="Image">
+            <img src="{% static 'images/history/21.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -855,7 +645,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/21.1.webp" alt="Image">
+            <img src="{% static 'images/history/21.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -868,7 +658,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/21.2.webp" alt="Image">
+            <img src="{% static 'images/history/21.2.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -882,7 +672,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/22.webp" alt="Image">
+            <img src="{% static 'images/history/22.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -895,7 +685,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/22.1.webp" alt="Image">
+            <img src="{% static 'images/history/22.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -908,7 +698,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/23.webp" alt="Image">
+            <img src="{% static 'images/history/23.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -921,7 +711,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/23.1.webp" alt="Image">
+            <img src="{% static 'images/history/23.1.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -935,7 +725,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/24.webp" alt="Image">
+            <img src="{% static 'images/history/24.webp' %}" alt="Image">
           </a>
         </div>
         <div class="marquee__item image">
@@ -949,7 +739,7 @@
                 </span>
               </div>
             </div>
-            <img src="img/history/24.1.webp" alt="Image">
+            <img src="{% static 'images/history/24.1.webp' %}" alt="Image">
           </a>
         </div>
       </div>
@@ -976,7 +766,7 @@
                     <p id="stats-counter-1" class="mxd-stats-number mxd-stats-simple__counter">0</p>
                   </div>
                   <!-- image -->
-                  <img class="mxd-stats-simple__image" src="img/icon/globus metal.png" alt="Icon">
+                  <img class="mxd-stats-simple__image" src="{% static 'images/icon/globus metal.png' %}" alt="Icon">
 
                   <!-- description -->
                   <p class="mxd-stats-simple__descr t-140 t-bright">Dunyo bo‘ylab<br>mamnun mijozlar</p>
@@ -990,7 +780,7 @@
                     <p id="stats-counter-2" class="mxd-stats-number mxd-stats-simple__counter">0</p>
                   </div>
                   <!-- image -->
-                  <img class="mxd-stats-simple__image" src="img/icon/inovation meta.png" alt="Icon">
+                  <img class="mxd-stats-simple__image" src="{% static 'images/icon/inovation meta.png' %}" alt="Icon">
                   <!-- description -->
                   <p class="mxd-stats-simple__descr t-140 t-bright"><br>Yangi innovatsion loyihalar</p>
                 </div>
@@ -1003,8 +793,8 @@
                     <p id="stats-counter-3" class="mxd-stats-number mxd-stats-simple__counter">0</p>
                   </div>
                   <!-- image -->
-                  <img class="mxd-stats-simple__image" src="img/icon/8cf13721-5670-42e3-9cb7-db36b5402d48.png"
-                    alt="Icon">
+                  <img class="mxd-stats-simple__image"
+                    src="{% static 'images/icon/8cf13721-5670-42e3-9cb7-db36b5402d48.png' %}" alt="Icon">
                   <!-- description -->
                   <p class="mxd-stats-simple__descr t-140 t-bright">Yillik professional tajriba</p>
                 </div>
@@ -1017,7 +807,7 @@
                     <p id="stats-counter-4" class="mxd-stats-number mxd-stats-simple__counter">0</p>
                   </div>
                   <!-- image -->
-                  <img class="mxd-stats-simple__image" src="img/icon/cup.png" alt="Icon">
+                  <img class="mxd-stats-simple__image" src="{% static 'images/icon/cup.png' %}" alt="Icon">
                   <!-- description -->
                   <p class="mxd-stats-simple__descr t-140 t-bright">Muvaffaqiyatli yakunlangan loyihalar</p>
                 </div>
@@ -1045,7 +835,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект.png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/safia.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1053,7 +843,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект (1).png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/audi.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1061,7 +851,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект (2).png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/transport-vazirligi.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1069,7 +859,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект (3).png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/silkroad.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1077,7 +867,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект (4).png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/mazda.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1085,7 +875,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект (5).png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/korzinka.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1093,7 +883,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Новый проект (6).png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/Coca-Cola.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1101,7 +891,7 @@
               <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                 <a class="mxd-partners-cards__inner" href="#0">
                   <div class="mxd-partners-cards__logo">
-                    <img src="img/logo brends/Coca-Cola_logo.svg.png" alt="Partner Logo">
+                    <img src="{% static 'images/logo-brends/volkswagen.png' %}" alt="Partner Logo">
                   </div>
                 </a>
               </div>
@@ -1164,7 +954,7 @@
                         <div class="mxd-testimonials-card__content">
                           <div class="mxd-testimonials-card__media anim-uni-in-up">
                             <div class="mxd-testimonials-card__photo">
-                              <img src="img/logo/Новый проект (1).png" alt="Author Photo">
+                              <img src="{% static 'images/logo/faw-logo.png' %}" alt="Author Photo">
                             </div>
                             <div class="mxd-testimonials-card__author">
                               <h5 class="mxd-testimonials-card__name anim-uni-in-up">Karimjonov Avazjon</h5>
@@ -1382,168 +1172,7 @@
   </div>
   <!-- Section - Experience End -->
   <!-- Футер (начало) -->
-  <footer id="mxd-footer" class="mxd-footer">
-
-    <!-- Футер — полноширинный текст (начало) -->
-    <div class="mxd-footer__text-wrap">
-      <div class="fullwidth-text__tl-trigger"></div>
-      <div class="mxd-footer__fullwidth-text personal anim-top-to-bottom">
-        <h1 class="footer-title">FAW TRUCKS</h1>
-      </div>
-    </div>
-    <!-- Футер — полноширинный текст (конец) -->
-
-    <!-- Футер — информационные колонки (начало) -->
-    <div class="mxd-footer__footer-blocks">
-      <!-- Первый столбец -->
-      <div class="footer-blocks__column animate-card-3">
-        <div class="footer-blocks__card fullheight-card">
-          <!-- Footer navigatsiyasi -->
-          <div class="footer-blocks__nav">
-            <ul class="footer-nav">
-              <li class="footer-nav__item anim-uni-in-up">
-                <a href="#" class="footer-nav__link btn-anim">
-                  <span class="btn-caption">Bosh sahifa</span>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up">
-                <a href="#" class="footer-nav__link btn-anim">
-                  <span class="btn-caption">Biz haqimizda</span>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up">
-                <a href="#" class="footer-nav__link btn-anim">
-                  <span class="btn-caption">Yuk mashinalari</span>
-                </a>
-                <p class="footer-nav__counter">
-                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="20px"
-                    viewBox="0 0 20 20" fill="currentColor">
-                    <path fill="currentColor"
-                      d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
-                                      c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
-                                      c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
-                                      c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
-                                      c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
-                                      c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
-                                      c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"></path>
-                  </svg>
-                  <span>25</span>
-                </p>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up">
-                <a href="#" class="footer-nav__link btn-anim">
-                  <span class="btn-caption">Xizmatlar</span>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up">
-                <a href="#" class="footer-nav__link btn-anim">
-                  <span class="btn-caption">Yangiliklar</span>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up">
-                <a href="#" class="footer-nav__link btn-anim">
-                  <span class="btn-caption">Aloqa</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- Havolalar -->
-          <div class="footer-blocks__links anim-uni-in-up">
-            <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="#">
-              <span class="btn-caption">Maxfiylik siyosati</span>
-            </a>
-            <a class="btn btn-line-xsmall btn-muted slide-right anim-no-delay" href="#">
-              <span class="btn-caption">Foydalanish shartlari</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Второй столбец -->
-      <div class="footer-blocks__column animate-card-3">
-        <div class="footer-blocks__card">
-          <p class="mxd-point-subtitle anim-uni-in-up">
-            <i class="ph-fill ph-envelope"></i>
-            <a href="mailto:info@fawtrucks.uz?subject=FAW%20TRUCKS%20bo'yicha%20so'rov"><span
-                style="font-weight: bold;">eMail: </span>info@fawtrucks.uz</a>
-          </p>
-          <p class="mxd-point-subtitle anim-uni-in-up">
-            <i class="ph-fill ph-phone"></i>
-            <a href="tel:+998712345678"><span style="font-weight: bold;">Telefon: </span>+998 71 234-56-78</a>
-          </p>
-          <p class="mxd-point-subtitle anim-uni-in-up">
-            <i class="ph-fill ph-map-pin"></i>
-            <a href="https://yandex.uz/maps/-/CHxF6XPZ" target="_blank" rel="noopener noreferrer"><span
-                style="font-weight: bold;">Manzil: </span>Toshkent,Abdulla Kaxxar ko'chasi 2А,</a>
-          </p>
-        </div>
-
-        <div class="footer-blocks__card card-maps" style="padding:0;overflow: hidden;height: 100%;">
-          <!-- Встроенная карта Yandex (растянута на всю карточку, уменьшен зум) -->
-          <div style="position:relative;overflow:hidden;width:100%;height:100%;">
-            <a href="https://yandex.uz/maps/org/187051650206/?utm_medium=mapframe&utm_source=maps" target="_blank"
-              rel="noopener noreferrer" style="color:#eee;font-size:12px;position:absolute;top:0px;">Faw Trucks</a>
-            <a href="https://yandex.uz/maps/10335/tashkent/category/car_dealership/184105322/?utm_medium=mapframe&utm_source=maps"
-              target="_blank" rel="noopener noreferrer"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Автосалон в Ташкенте</a>
-            <iframe
-              src="https://yandex.uz/map-widget/v1/?ll=69.264431%2C41.271680&mode=poi&poi%5Bpoint%5D=69.264339%2C41.271780&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D187051650206&z=16"
-              width="100%" height="100%" frameborder="1" allowfullscreen="true"
-              style="position:relative;border:0;min-height:220px;"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Третий столбец -->
-      <div class="footer-blocks__column animate-card-3">
-        <div class="footer-blocks__card fullheight-card">
-          <div class="footer-blocks__block">
-            <div class="footer-blocks__title anim-uni-in-up">
-              <p class="footer-blocks__title-l">Ijtimoiy tarmoqlar</p>
-            </div>
-
-            <div class="footer-blocks__socials">
-              <ul class="footer-socials">
-                <li class="footer-socials__item anim-uni-in-up">
-                  <img src="faw_site-img/icons/main-social__icon/facebook.png" alt="" class="footer-socials__icon">
-                  <a href="https://www.facebook.com/fawtrucksuz" class="footer-socials__link"
-                    target="_blank">Facebook</a>
-                </li>
-                <li class="footer-socials__item anim-uni-in-up">
-                  <img src="faw_site-img/icons/main-social__icon/instagram.png" alt="" class="footer-socials__icon">
-                  <a href="https://www.instagram.com/fawtrucks.uz" class="footer-socials__link"
-                    target="_blank">Instagram</a>
-                </li>
-                <li class="footer-socials__item anim-uni-in-up">
-                  <img src="faw_site-img/icons/main-social__icon/telegram.png" alt="" class="footer-socials__icon">
-                  <a href="https://t.me/fawtrucksuz" class="footer-socials__link" target="_blank">Telegram</a>
-                </li>
-                <li class="footer-socials__item anim-uni-in-up">
-                  <img src="faw_site-img/icons/main-social__icon/youtube.png" alt="" class="footer-socials__icon">
-                  <a href="https://www.youtube.com/c/fawtrucksuz" class="footer-socials__link"
-                    target="_blank">YouTube</a>
-                </li>
-                <li class="footer-socials__item anim-uni-in-up">
-                  <img src="faw_site-img/icons/main-social__icon/linkedin.png" alt="" class="footer-socials__icon">
-                  <a href="https://www.linkedin.com/company/faw-trucks-uzbekistan" class="footer-socials__link"
-                    target="_blank">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="footer-blocks__links anim-uni-in-up">
-            <p class="t-xsmall t-muted">
-              <a class="no-effect" href="#" target="_blank">FAW TRUCKS</a>
-              © 2025 - Barcha huquqlar himoyalangan
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Футер — информационные колонки (конец) -->
-
-  </footer>
+  {% include 'main/includes/footer.html' %}
   <!-- Футер (конец) -->
 
   <!-- Кнопка «вверх» (начало) -->
@@ -1553,32 +1182,32 @@
   <!-- Кнопка «вверх» (конец) -->
 
   <!-- Load Scripts Start -->
-  <script src="template/js/libs.min.js"></script>
+  <script src="{% static 'js/libs.min.js' %}"></script>
   <!-- <script src="template/js/app.js"></script> -->
-  <script src="faw-js/faw.js"></script>
-  <script src="faw-js/about.js"></script>
+  <script src="{% static 'js/faw.js' %}"></script>
+  <script src="{% static 'js/about.js' %}"></script>
   <script>
     // ОБЪЕДИНЕННЫЙ И ИСПРАВЛЕННЫЙ СКРИПТ - добавить в <head> первым скриптом
 
-(function() {
-    'use strict';
-    
-    // БЛОКИРОВЩИК ОШИБОК И YOUTUBE API
-    const originalConsole = {
+    (function () {
+      'use strict';
+
+      // БЛОКИРОВЩИК ОШИБОК И YOUTUBE API
+      const originalConsole = {
         log: console.log.bind(console),
         warn: console.warn.bind(console),
         error: console.error.bind(console),
         info: console.info.bind(console)
-    };
+      };
 
-    const BLOCKED_DOMAINS = [
+      const BLOCKED_DOMAINS = [
         'play.google.com',
         'youtube.com/iframe_api',
         'youtube.com/player_api',
         'googlevideo.com'
-    ];
+      ];
 
-    const BLOCKED_MESSAGES = [
+      const BLOCKED_MESSAGES = [
         'Failed to load resource',
         '401 ()',
         'Unauthorized',
@@ -1589,159 +1218,159 @@
         'hasfast=true',
         'ERR_CONNECTION_TIMED_OUT',
         'net::ERR_'
-    ];
+      ];
 
-    function shouldBlock(message) {
+      function shouldBlock(message) {
         if (typeof message !== 'string') {
-            message = String(message);
+          message = String(message);
         }
 
         for (const domain of BLOCKED_DOMAINS) {
-            if (message.includes(domain)) return true;
+          if (message.includes(domain)) return true;
         }
 
         for (const blockedMsg of BLOCKED_MESSAGES) {
-            if (message.includes(blockedMsg)) return true;
+          if (message.includes(blockedMsg)) return true;
         }
 
         return false;
-    }
+      }
 
-    // Переопределяем методы консоли
-    console.error = function(...args) {
+      // Переопределяем методы консоли
+      console.error = function (...args) {
         const message = args.join(' ');
         if (!shouldBlock(message)) {
-            originalConsole.error.apply(console, args);
+          originalConsole.error.apply(console, args);
         }
-    };
+      };
 
-    console.warn = function(...args) {
+      console.warn = function (...args) {
         const message = args.join(' ');
         if (!shouldBlock(message)) {
-            originalConsole.warn.apply(console, args);
+          originalConsole.warn.apply(console, args);
         }
-    };
+      };
 
-    console.log = function(...args) {
+      console.log = function (...args) {
         const message = args.join(' ');
         if (!shouldBlock(message)) {
-            originalConsole.log.apply(console, args);
+          originalConsole.log.apply(console, args);
         }
-    };
+      };
 
-    // Блокируем window.onerror
-    const originalOnError = window.onerror;
-    window.onerror = function(message, source, lineno, colno, error) {
+      // Блокируем window.onerror
+      const originalOnError = window.onerror;
+      window.onerror = function (message, source, lineno, colno, error) {
         if (shouldBlock(message) || shouldBlock(source || '')) {
-            return true;
+          return true;
         }
         if (originalOnError) {
-            return originalOnError.call(window, message, source, lineno, colno, error);
+          return originalOnError.call(window, message, source, lineno, colno, error);
         }
-    };
+      };
 
-    // Блокируем unhandledrejection
-    window.addEventListener('unhandledrejection', function(event) {
+      // Блокируем unhandledrejection
+      window.addEventListener('unhandledrejection', function (event) {
         const message = event.reason ? String(event.reason) : '';
         if (shouldBlock(message)) {
-            event.preventDefault();
+          event.preventDefault();
         }
-    });
+      });
 
-    // БЛОКИРОВКА YOUTUBE API
-    const originalCreateElement = document.createElement;
-    document.createElement = function(tagName) {
+      // БЛОКИРОВКА YOUTUBE API
+      const originalCreateElement = document.createElement;
+      document.createElement = function (tagName) {
         const element = originalCreateElement.call(document, tagName);
 
         if (tagName.toLowerCase() === 'script') {
-            const originalSrcSetter = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src').set;
-            Object.defineProperty(element, 'src', {
-                set: function(value) {
-                    if (typeof value === 'string' &&
-                        (value.includes('youtube.com/iframe_api') ||
-                         value.includes('youtube.com/player_api'))) {
-                        originalConsole.log('YouTube API заблокирован:', value);
-                        return;
-                    }
-                    originalSrcSetter.call(this, value);
-                },
-                get: function() {
-                    return this.getAttribute('src');
-                },
-                configurable: true
-            });
+          const originalSrcSetter = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src').set;
+          Object.defineProperty(element, 'src', {
+            set: function (value) {
+              if (typeof value === 'string' &&
+                (value.includes('youtube.com/iframe_api') ||
+                  value.includes('youtube.com/player_api'))) {
+                originalConsole.log('YouTube API заблокирован:', value);
+                return;
+              }
+              originalSrcSetter.call(this, value);
+            },
+            get: function () {
+              return this.getAttribute('src');
+            },
+            configurable: true
+          });
         }
 
         return element;
-    };
+      };
 
-    // Блокируем appendChild для YouTube API
-    const originalAppendChild = Node.prototype.appendChild;
-    Node.prototype.appendChild = function(child) {
+      // Блокируем appendChild для YouTube API
+      const originalAppendChild = Node.prototype.appendChild;
+      Node.prototype.appendChild = function (child) {
         if (child.tagName === 'SCRIPT' && child.src &&
-            (child.src.includes('youtube.com/iframe_api') ||
-             child.src.includes('youtube.com/player_api'))) {
-            originalConsole.log('YouTube API скрипт заблокирован');
-            return child;
+          (child.src.includes('youtube.com/iframe_api') ||
+            child.src.includes('youtube.com/player_api'))) {
+          originalConsole.log('YouTube API скрипт заблокирован');
+          return child;
         }
         return originalAppendChild.call(this, child);
-    };
+      };
 
-    // Мокаем YouTube API
-    window.YT = {
-        Player: function(elementId, config) {
-            return {
-                playVideo: function() {},
-                pauseVideo: function() {},
-                stopVideo: function() {},
-                destroy: function() {},
-                getPlayerState: function() { return -1; },
-                addEventListener: function() {}
-            };
+      // Мокаем YouTube API
+      window.YT = {
+        Player: function (elementId, config) {
+          return {
+            playVideo: function () { },
+            pauseVideo: function () { },
+            stopVideo: function () { },
+            destroy: function () { },
+            getPlayerState: function () { return -1; },
+            addEventListener: function () { }
+          };
         },
-        ready: function(callback) {
-            if (typeof callback === 'function') {
-                setTimeout(callback, 100);
-            }
+        ready: function (callback) {
+          if (typeof callback === 'function') {
+            setTimeout(callback, 100);
+          }
         }
-    };
+      };
 
-    window.onYouTubeIframeAPIReady = function() {};
+      window.onYouTubeIframeAPIReady = function () { };
 
-    originalConsole.log('Блокировщик ошибок активирован');
-})();
+      originalConsole.log('Блокировщик ошибок активирован');
+    })();
 
-// ИНИЦИАЛИЗАЦИЯ СТРАНИЦЫ И СЧЕТЧИКОВ
-document.addEventListener("DOMContentLoaded", function() {
-    'use strict';
+    // ИНИЦИАЛИЗАЦИЯ СТРАНИЦЫ И СЧЕТЧИКОВ
+    document.addEventListener("DOMContentLoaded", function () {
+      'use strict';
 
-    // ПРАВИЛЬНЫЕ ЗНАЧЕНИЯ СЧЕТЧИКОВ - ИСПРАВЛЕНО!
-    const COUNTER_VALUES = {
+      // ПРАВИЛЬНЫЕ ЗНАЧЕНИЯ СЧЕТЧИКОВ - ИСПРАВЛЕНО!
+      const COUNTER_VALUES = {
         'stats-counter-1': { value: 15, suffix: ' млн+' },  // ИСПРАВЛЕНО: было 18
         'stats-counter-2': { value: 800, suffix: '+' },
         'stats-counter-3': { value: 75, suffix: '+' },
         'stats-counter-4': { value: 200, suffix: '+' }
-    };
+      };
 
-    // 1. Auto-play videos with error handling
-    function initVideoAutoplay() {
+      // 1. Auto-play videos with error handling
+      function initVideoAutoplay() {
         const videos = document.querySelectorAll('video');
         videos.forEach(video => {
-            video.play().catch(e => {
-                console.log('Autoplay prevented:', e);
-            });
+          video.play().catch(e => {
+            console.log('Autoplay prevented:', e);
+          });
         });
-    }
+      }
 
-    // 2. Prevent default behavior for empty links
-    function preventEmptyLinks() {
+      // 2. Prevent default behavior for empty links
+      function preventEmptyLinks() {
         document.querySelectorAll('a[href="#"]').forEach(link => {
-            link.addEventListener('click', e => e.preventDefault());
+          link.addEventListener('click', e => e.preventDefault());
         });
-    }
+      }
 
-    // 3. Modal functionality for history images
-    function initHistoryModal() {
+      // 3. Modal functionality for history images
+      function initHistoryModal() {
         const items = document.querySelectorAll(".marquee__item.image");
         const modal = document.getElementById("modal");
 
@@ -1753,190 +1382,190 @@ document.addEventListener("DOMContentLoaded", function() {
         const closeBtn = document.querySelector(".close");
 
         items.forEach(item => {
-            const link = item.querySelector(".marquee__link");
-            const img = item.querySelector("img");
-            const titleElement = item.querySelector(".history-section-elemet_title");
-            const descriptionElement = item.querySelector(".mxd-section.text");
+          const link = item.querySelector(".marquee__link");
+          const img = item.querySelector("img");
+          const titleElement = item.querySelector(".history-section-elemet_title");
+          const descriptionElement = item.querySelector(".mxd-section.text");
 
-            if (!link || !img || !titleElement || !descriptionElement) return;
+          if (!link || !img || !titleElement || !descriptionElement) return;
 
-            const title = titleElement.textContent;
-            const description = descriptionElement.textContent;
+          const title = titleElement.textContent;
+          const description = descriptionElement.textContent;
 
-            link.addEventListener("click", function(e) {
-                e.preventDefault();
-                modal.style.display = "flex";
-                modalImage.src = img.src;
-                modalImage.alt = title;
-                modalTitle.textContent = title;
-                modalDescription.textContent = description;
-            });
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+            modalImage.src = img.src;
+            modalImage.alt = title;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+          });
         });
 
         // Close modal handlers
         if (closeBtn) {
-            closeBtn.addEventListener("click", function() {
-                modal.style.display = "none";
-            });
+          closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+          });
         }
 
-        window.addEventListener("click", function(e) {
-            if (e.target === modal) {
-                modal.style.display = "none";
-            }
+        window.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.style.display = "none";
+          }
         });
 
         // ESC key to close modal
-        document.addEventListener("keydown", function(e) {
-            if (e.key === "Escape" && modal.style.display === "flex") {
-                modal.style.display = "none";
-            }
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.style.display === "flex") {
+            modal.style.display = "none";
+          }
         });
-    }
+      }
 
-    // 4. Counter animations - ИСПРАВЛЕННАЯ ВЕРСИЯ
-    function initFAWCounters() {
+      // 4. Counter animations - ИСПРАВЛЕННАЯ ВЕРСИЯ
+      function initFAWCounters() {
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counterId = entry.target.id;
-                    const config = COUNTER_VALUES[counterId];
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const counterId = entry.target.id;
+              const config = COUNTER_VALUES[counterId];
 
-                    if (config) {
-                        try {
-                            if (typeof countUp !== 'undefined' && countUp.CountUp) {
-                                const counter = new countUp.CountUp(counterId, config.value, {
-                                    suffix: config.suffix,
-                                    duration: 2.5,
-                                    useEasing: true,
-                                    useGrouping: true
-                                });
+              if (config) {
+                try {
+                  if (typeof countUp !== 'undefined' && countUp.CountUp) {
+                    const counter = new countUp.CountUp(counterId, config.value, {
+                      suffix: config.suffix,
+                      duration: 2.5,
+                      useEasing: true,
+                      useGrouping: true
+                    });
 
-                                if (!counter.error) {
-                                    counter.start();
-                                    console.log(`✓ ${counterId}: ${config.value}${config.suffix}`);
-                                } else {
-                                    entry.target.textContent = config.value + config.suffix;
-                                    console.log(`⚠ ${counterId}: fallback used`);
-                                }
-                            } else {
-                                entry.target.textContent = config.value + config.suffix;
-                                console.log(`📝 ${counterId}: direct set`);
-                            }
-                        } catch (error) {
-                            entry.target.textContent = config.value + config.suffix;
-                            console.log(`❌ ${counterId}: error handled`);
-                        }
-
-                        observer.unobserve(entry.target);
+                    if (!counter.error) {
+                      counter.start();
+                      console.log(`✓ ${counterId}: ${config.value}${config.suffix}`);
+                    } else {
+                      entry.target.textContent = config.value + config.suffix;
+                      console.log(`⚠ ${counterId}: fallback used`);
                     }
+                  } else {
+                    entry.target.textContent = config.value + config.suffix;
+                    console.log(`📝 ${counterId}: direct set`);
+                  }
+                } catch (error) {
+                  entry.target.textContent = config.value + config.suffix;
+                  console.log(`❌ ${counterId}: error handled`);
                 }
-            });
+
+                observer.unobserve(entry.target);
+              }
+            }
+          });
         }, {
-            threshold: 0.3,
-            rootMargin: '0px 0px -100px 0px'
+          threshold: 0.3,
+          rootMargin: '0px 0px -100px 0px'
         });
 
         // Observe all counter elements
         Object.keys(COUNTER_VALUES).forEach(counterId => {
-            const element = document.getElementById(counterId);
-            if (element) {
-                observer.observe(element);
-            }
+          const element = document.getElementById(counterId);
+          if (element) {
+            observer.observe(element);
+          }
         });
-    }
+      }
 
-    // 5. Fallback for counters if CountUp not available
-    function initCountersFallback() {
+      // 5. Fallback for counters if CountUp not available
+      function initCountersFallback() {
         Object.keys(COUNTER_VALUES).forEach(counterId => {
-            const element = document.getElementById(counterId);
-            if (element) {
-                const config = COUNTER_VALUES[counterId];
-                element.textContent = config.value + config.suffix;
-                console.log(`${counterId}: ${config.value}${config.suffix} (fallback)`);
-            }
+          const element = document.getElementById(counterId);
+          if (element) {
+            const config = COUNTER_VALUES[counterId];
+            element.textContent = config.value + config.suffix;
+            console.log(`${counterId}: ${config.value}${config.suffix} (fallback)`);
+          }
         });
-    }
+      }
 
-    // 6. Fix GSAP warnings by checking if elements exist
-    function handleGSAPWarnings() {
+      // 6. Fix GSAP warnings by checking if elements exist
+      function handleGSAPWarnings() {
         const gsapTargets = document.querySelectorAll('[data-speed]');
         if (gsapTargets.length === 0) {
-            console.log('GSAP targets with [data-speed] not found - this is expected for this page');
+          console.log('GSAP targets with [data-speed] not found - this is expected for this page');
         }
-    }
+      }
 
-    // 7. Initialize page components
-    function initializePage() {
+      // 7. Initialize page components
+      function initializePage() {
         try {
-            initVideoAutoplay();
-            preventEmptyLinks();
-            initHistoryModal();
-            
-            // Инициализируем счетчики с проверкой библиотеки
-            if (typeof countUp === 'undefined') {
-                console.warn('CountUp library not available, using fallback');
-                setTimeout(initCountersFallback, 500);
-            } else {
-                initFAWCounters();
-            }
-            
-            handleGSAPWarnings();
-            console.log('About page initialized successfully');
+          initVideoAutoplay();
+          preventEmptyLinks();
+          initHistoryModal();
+
+          // Инициализируем счетчики с проверкой библиотеки
+          if (typeof countUp === 'undefined') {
+            console.warn('CountUp library not available, using fallback');
+            setTimeout(initCountersFallback, 500);
+          } else {
+            initFAWCounters();
+          }
+
+          handleGSAPWarnings();
+          console.log('About page initialized successfully');
         } catch (error) {
-            console.error('Error initializing about page:', error);
+          console.error('Error initializing about page:', error);
         }
-    }
+      }
 
-    // Start initialization
-    initializePage();
+      // Start initialization
+      initializePage();
 
-    // Проверка и исправление через 3 секунды
-    setTimeout(() => {
+      // Проверка и исправление через 3 секунды
+      setTimeout(() => {
         Object.keys(COUNTER_VALUES).forEach(counterId => {
-            const element = document.getElementById(counterId);
-            if (element) {
-                const current = element.textContent.trim();
-                const expected = COUNTER_VALUES[counterId].value + COUNTER_VALUES[counterId].suffix;
-                
-                if (current !== expected && current !== '0') {
-                    console.log(`Исправление ${counterId}: "${current}" → "${expected}"`);
-                    element.textContent = expected;
-                }
-            }
-        });
-    }, 3000);
-});
+          const element = document.getElementById(counterId);
+          if (element) {
+            const current = element.textContent.trim();
+            const expected = COUNTER_VALUES[counterId].value + COUNTER_VALUES[counterId].suffix;
 
-// ПУБЛИЧНЫЕ МЕТОДЫ
-window.FAWAbout = {
-    // Переинициализация счетчиков
-    reinitCounters: function() {
+            if (current !== expected && current !== '0') {
+              console.log(`Исправление ${counterId}: "${current}" → "${expected}"`);
+              element.textContent = expected;
+            }
+          }
+        });
+      }, 3000);
+    });
+
+    // ПУБЛИЧНЫЕ МЕТОДЫ
+    window.FAWAbout = {
+      // Переинициализация счетчиков
+      reinitCounters: function () {
         const counters = document.querySelectorAll('[id^="stats-counter-"]');
         counters.forEach(counter => {
-            counter.textContent = '0';
+          counter.textContent = '0';
         });
 
         setTimeout(() => {
-            const COUNTER_VALUES = {
-                'stats-counter-1': { value: 15, suffix: ' млн+' },
-                'stats-counter-2': { value: 800, suffix: '+' },
-                'stats-counter-3': { value: 75, suffix: '+' },
-                'stats-counter-4': { value: 200, suffix: '+' }
-            };
+          const COUNTER_VALUES = {
+            'stats-counter-1': { value: 15, suffix: ' млн+' },
+            'stats-counter-2': { value: 800, suffix: '+' },
+            'stats-counter-3': { value: 75, suffix: '+' },
+            'stats-counter-4': { value: 200, suffix: '+' }
+          };
 
-            Object.keys(COUNTER_VALUES).forEach(counterId => {
-                const element = document.getElementById(counterId);
-                if (element) {
-                    const config = COUNTER_VALUES[counterId];
-                    element.textContent = config.value + config.suffix;
-                }
-            });
+          Object.keys(COUNTER_VALUES).forEach(counterId => {
+            const element = document.getElementById(counterId);
+            if (element) {
+              const config = COUNTER_VALUES[counterId];
+              element.textContent = config.value + config.suffix;
+            }
+          });
         }, 100);
-    },
+      },
 
-    // Открыть модальное окно истории
-    openHistoryModal: function(imageSrc, title, description) {
+      // Открыть модальное окно истории
+      openHistoryModal: function (imageSrc, title, description) {
         const modal = document.getElementById("modal");
         if (!modal) return;
 
@@ -1945,33 +1574,33 @@ window.FAWAbout = {
         const modalDescription = document.getElementById("modal-description");
 
         if (modalImage && modalTitle && modalDescription) {
-            modal.style.display = "flex";
-            modalImage.src = imageSrc;
-            modalImage.alt = title;
-            modalTitle.textContent = title;
-            modalDescription.textContent = description;
+          modal.style.display = "flex";
+          modalImage.src = imageSrc;
+          modalImage.alt = title;
+          modalTitle.textContent = title;
+          modalDescription.textContent = description;
         }
-    }
-};
+      }
+    };
 
-// Принудительное исправление счетчиков (для консоли)
-window.fixCounters = function() {
-    const COUNTER_VALUES = {
+    // Принудительное исправление счетчиков (для консоли)
+    window.fixCounters = function () {
+      const COUNTER_VALUES = {
         'stats-counter-1': { value: 15, suffix: ' млн+' },
         'stats-counter-2': { value: 800, suffix: '+' },
         'stats-counter-3': { value: 75, suffix: '+' },
         'stats-counter-4': { value: 200, suffix: '+' }
-    };
+      };
 
-    Object.keys(COUNTER_VALUES).forEach(counterId => {
+      Object.keys(COUNTER_VALUES).forEach(counterId => {
         const element = document.getElementById(counterId);
         if (element) {
-            const config = COUNTER_VALUES[counterId];
-            element.textContent = config.value + config.suffix;
-            console.log(`Исправлен ${counterId}: ${config.value}${config.suffix}`);
+          const config = COUNTER_VALUES[counterId];
+          element.textContent = config.value + config.suffix;
+          console.log(`Исправлен ${counterId}: ${config.value}${config.suffix}`);
         }
-    });
-};
+      });
+    };
   </script>
 
 </body>
