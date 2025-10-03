@@ -82,6 +82,7 @@ body[data-theme="dark"] {
     background-color: #161616 !important;
     color: #FFFFFF !important;
 }
+
 /* ПРОСТОЕ РЕШЕНИЕ: Переопределяем автоматическую темную тему на светлую */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -94,7 +95,6 @@ body[data-theme="dark"] {
         --st-opp-bright: #FFFFFF;
     }
 }
-
 
 /* Hero секции в темной теме */
 body[data-theme="dark"] .mxd-hero-06 {
@@ -641,7 +641,7 @@ body[data-theme="dark"] .mxd-contact {
 
 @media (max-width: 425px) {
     .mxd-nav__wrap {
-        padding: 20px 2rem ;
+        padding: 20px 2rem;
     }
 
     .mxd-nav__contain {
@@ -1185,7 +1185,7 @@ body[data-theme="dark"] .mxd-logo {
 
 @media (max-width: 425px) {
     .mxd-nav__wrap {
-        padding: 20px 2rem ;
+        padding: 20px 2rem;
     }
 }
 

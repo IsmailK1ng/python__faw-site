@@ -17,7 +17,7 @@ def products(request):
     return render(request, 'main/products.html')
 
 def become_a_dealer(request):
-    return render(request, 'main/become_potential_dealer.html')
+    return render(request, 'main/become_a_dealer.html')
 
 def lizing(request):
     return render(request, 'main/lizing.html')

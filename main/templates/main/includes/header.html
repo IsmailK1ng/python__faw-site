@@ -6,6 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@400;600;700&family=Funnel+Sans:wght@400;600;700&display=swap');
+
+        html {
+            font-family: var(--_font-default);
+        }
+
+        h1, h2, h3, h4, h5, h6, a, .mxd-logo__text, .btn-caption {
+            font-family: var(--_font-accent);
+        }
+    </style>
 </head>
 
 <body>
@@ -28,7 +39,7 @@
                     <a href="{% url 'home' %}" class="desktop-menu__link">Bosh sahifa</a>
                 </li>
                 <li class="desktop-menu__item">
-                    <a href="#" class="desktop-menu__link">
+                    <a href="{% url 'dealers' %}" class="desktop-menu__link">
                         Dilerlar
                         <span class="desktop-menu__arrow">▼</span>
                     </a>
@@ -45,7 +56,7 @@
                     <a href="{% url 'news' %}" class="desktop-menu__link">Kompaniya yangiliklari</a>
                 </li>
                 <li class="desktop-menu__item">
-                    <a href="faw_main-models.html" class="desktop-menu__link">
+                    <a href="{% url 'products' %}" class="desktop-menu__link">
                         Modellar
                         <span class="desktop-menu__arrow">▼</span>
                     </a>
